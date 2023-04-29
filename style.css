@@ -76,7 +76,7 @@ body {
   }
 
   .nav-block:last-child > .nav-sub-block:last-child::before {
-    content: url("images/visual-effects/divider.SVG");
+    content: url("images/visual-effects/divider.svg");
     height: 32px;
     margin-top: auto;
     margin-bottom: auto;
@@ -134,7 +134,7 @@ body {
   }
 
   .main-heading__heading::before {
-    content: url("images/visual-effects/highlight.SVG");
+    content: url("images/visual-effects/highlight.svg");
     width: 4px;
     height: 40px;
     display: block;
@@ -155,7 +155,7 @@ body {
   }
 
   .main-nav::after {
-    content: url("images/visual-effects/gradient.SVG");
+    content: url("images/visual-effects/gradient.svg");
     position: absolute;
     right: 0;
     box-sizing: border-box;
@@ -223,7 +223,7 @@ body {
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("images/visual-effects/readmore.SVG");
+    background-image: url("images/visual-effects/readmore.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-sizing: border-box;
@@ -260,7 +260,7 @@ body {
 
   .nav-block:last-child > .nav-sub-block:last-child::before,
   .nav-block:first-child > .nav-sub-block:last-child::before {
-    content: url("images/visual-effects/divider.SVG");
+    content: url("images/visual-effects/divider.svg");
     height: 32px;
     margin-top: auto;
     margin-bottom: auto;
@@ -318,7 +318,7 @@ body {
   }
 
   .main-heading__heading::before {
-    content: url("images/visual-effects/highlight.SVG");
+    content: url("images/visual-effects/highlight.svg");
     width: 4px;
     height: 40px;
     display: block;
@@ -335,7 +335,7 @@ body {
   }
 
   .main-nav::after {
-    content: url("images/visual-effects/gradient.SVG");
+    content: url("images/visual-effects/gradient.svg");
     position: absolute;
     right: 0;
     box-sizing: border-box;
@@ -393,7 +393,7 @@ body {
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("images/visual-effects/readmore.SVG");
+    background-image: url("images/visual-effects/readmore.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-sizing: border-box;
