@@ -88,12 +88,16 @@ body {
 
   .nav-item__button {
     display: inline-flex;
-    border: none;
-    background-color: transparent;
+    align-items: center;
+
     width: 40px;
     height: 40px;
     padding: 0;
     margin: 0;
+    border: none;
+    border-radius: 50%;
+
+    background: none;
   }
 
   .nav-item__button-description {
@@ -105,11 +109,17 @@ body {
     align-items: center;
   }
 
-  .header-nav__image {
+  .nav-item__icon {
+    background-color: #FF3E79;  
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .nav-item__icon {
-  }
+  .header-nav__image {  }
 
   /*main*/
   .page-main {
@@ -150,9 +160,35 @@ body {
     margin-right: -16px;
   }
 
-  .wide-mobile {
-    display: none;
+  .main-nav__list {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
   }
+
+  .main-nav__item {     
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;    
+  }
+  
+  .main-nav__link {
+    text-decoration: none;
+    font-family: "TT Lakes Medium", sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: #7e7e82;
+    white-space: nowrap;
+    
+    appearance: button;  
+  }
+
 
   .main-nav::after {
     content: url("images/visual-effects/gradient.svg");
@@ -161,26 +197,16 @@ body {
     box-sizing: border-box;
   }
 
-  .main-nav__button {
-    font-family: "TT Lakes Medium", sans-serif;
-    font-size: 16px;
-    background: #f8f8f8;
-    border-radius: 6px;
-    border: hidden;
-    color: #7e7e82;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    font-size: 16px;
-    letter-spacing: -0.2px;
-    line-height: 24px;
-    white-space: nowrap;
+  .wide-mobile {
+    display: none;
   }
 
-  .main-nav__button:focus {
+  .main-nav__item:hover {
+    background: #f8f8f8;
     box-shadow: inset 0px 0px 0px 2px #b8ffec;
     background-color: white;
+    border-radius: 6px;
+    border: hidden;
   }
 
   .main-content {
@@ -205,9 +231,11 @@ body {
   }
   .read-more {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin-top: 10px;
+
   }
   .read-more__button {
     font-family: "TT Lakes Medium", sans-serif;
@@ -215,11 +243,29 @@ body {
     height: 24px;
     border: none;
     background: none;
-    margin-left: 8px;
     padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
   }
 
-  .read-more::before {
+  .read-more__icon {
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .read-more__image {
+  } 
+
+  /* .read-more::before {
     content: "";
     width: 24px;
     height: 24px;
@@ -227,7 +273,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-sizing: border-box;
-  }
+  } */
 
   .content-block__gallery {
     margin-left: -16px;
@@ -271,17 +317,12 @@ body {
   }
 
   .nav-item {
-    display: inline-flex;
+    display: flex;
   }
 
   .nav-item__button {
-    display: inline-flex;
-    border: none;
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .header-nav__logo {
@@ -379,24 +420,8 @@ body {
     line-height: 20px;
     max-width: 86.67%;
   }
-
-  .read-more__button {
-    font-family: "TT Lakes Medium", sans-serif;
-    font-size: 16px;
-    height: 24px;
-    border: none;
-    background: none;
-    margin-left: 8px;
-    padding: 0;
-  }
-  .read-more::before {
-    content: "";
-    width: 24px;
-    height: 24px;
-    background-image: url("images/visual-effects/readmore.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    box-sizing: border-box;
+  .content-block__text:not(:first-child) {
+    margin-top: 24px;
   }
   .content-block__gallery {
     width: 100%;
@@ -456,6 +481,10 @@ body {
     line-height: 24px;
   }
   .main-nav {
+    overflow-x: unset;
+    flex-wrap: wrap;
+  }
+  .main-nav__list {
     overflow-x: unset;
     flex-wrap: wrap;
   }
