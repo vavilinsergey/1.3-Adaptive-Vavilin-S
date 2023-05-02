@@ -438,6 +438,8 @@ body {
     background-color: #f8f8f8;
     box-shadow: none;
     height: auto;
+
+    justify-content: flex-end;
   }
   .page-header {
     position: absolute;
