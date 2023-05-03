@@ -40,6 +40,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-nav::-webkit-scrollbar {
@@ -129,6 +131,7 @@ body {
     padding: 16px;
     padding-top: 24px;
     gap: 24px;
+    width:100%;
   }
 
   .main-heading {
